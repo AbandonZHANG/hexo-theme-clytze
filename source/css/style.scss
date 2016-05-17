@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+// font color
+$global_font_color: #34495e;
+$title_font_color: #0075c9;
+$link_font_color: #42b983;
+$post_title_color: #2c3e50;
+$post_meta_color: #7f8c8d;
+$code_color: #e96900;
+// backgroud color
+$post_tag_backgroud: #e36b6b;
+// border color
+$border_default_color: #ddd;
+
+@import "scss/base";
+@import "scss/post";
+@import "scss/highlight";
+@import "scss/tag-cloud";

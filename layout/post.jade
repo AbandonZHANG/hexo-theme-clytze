@@ -1,0 +1,24 @@
+extends base
+
+block title
+  title= page.title + " | " + config.title
+
+block content
+  article.post
+    .post-title= page.title
+    .post-meta
+      span.post-date= page.date.format(config.date_format)
+      if page.tags
+        span.post-tags
+          for tag in page.tags.toArray()
+            a(href=url_for(tag.path))
+              != tag.name
+    //if page.toc
+    //  .post-toc
+    //    .toc-title= __('contents')
+    //    != toc(page.content)
+    .post-content
+      != page.content
+
+    include _partial/post_nav
+    include _partial/comments

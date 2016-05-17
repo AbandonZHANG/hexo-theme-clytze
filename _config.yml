@@ -1,0 +1,22 @@
+## If you want to use fancybox please set the value to true
+fancybox: false
+
+## Your Disqus ID
+# disqus: abandonzhang
+
+## Your DuoShuo ID
+duoshuo: abandonzhang
+
+## If you want to use swiftype site search, type your swiftype_key
+swiftype:
+
+# 菜单栏
+menu:
+  - page: home
+    directory: .
+  - page: tags
+    directory: tags/
+  - page: about
+    directory: about/
+  - page: rss
+    directory: atom.xml

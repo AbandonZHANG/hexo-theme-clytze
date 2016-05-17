@@ -1,0 +1,17 @@
+.tag-cloud {
+    margin: 50px 20px;
+    line-height: 50px;
+    word-break: keep-all;
+    font-size: 70%;
+    a {
+        margin: 10px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid $border_default_color;
+        &:hover {
+            border-bottom: 1px solid #000;
+        }
+    }
+    :last-child {
+        border-bottom: 1px solid $border_default_color;
+    }
+}
