@@ -1,19 +1,11 @@
 home: HOME
 tags: TAGS
-about: ABOUT
-rss: RSS
-blog: Blog
 categories: Categories
 archive: Archive
+about: ABOUT
+rss: RSS
 links: Links
-recent: Recent
 next: Next
 previous: Previous
-notitle: No Title
-blogroll: Blogroll
-history: History
-guestbook: Guestbook
-recent_comments: Recent Comments
-reading_label: Reading articles in %s
 Readmore: Read More
 contents: Contents
