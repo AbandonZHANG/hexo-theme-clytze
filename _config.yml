@@ -7,9 +7,6 @@ fancybox: false
 ## Your DuoShuo ID
 duoshuo: abandonzhang
 
-## If you want to use swiftype site search, type your swiftype_key
-swiftype:
-
 # 菜单栏
 menu:
   - page: home
@@ -18,5 +15,7 @@ menu:
     directory: tags/
   - page: about
     directory: about/
+  - page: readings
+    directory: readings/
   - page: rss
     directory: atom.xml
