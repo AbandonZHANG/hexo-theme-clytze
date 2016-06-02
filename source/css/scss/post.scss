@@ -6,7 +6,7 @@
         }
         border-bottom: 1px solid $border_default_color;
     }
-    .post-title {
+    h1, .post-title {
         font-size: 1.4em;
         font-weight: bold;
         a {
@@ -40,28 +40,41 @@
         border-bottom: 0;
     }
 
-    h1, h2 {
-        margin: 1.5em 0;
-    }
-
-    h1 {
-        font-size: 1.6em;
-    }
-
     h2 {
         font-size: 1.4em;
-        padding-bottom: 0.5em;
-        border-bottom: 1px solid $border_default_color;
+        margin: 1.3em 0;
+        position: relative;
+        &:before{
+            content: "#";
+            position: absolute;
+            left: -20px;
+            color: $link_font_color;
+        }
     }
 
     h3 {
         position: relative;
         &:before{
-            content: "#";
+            content: "##";
             position: absolute;
-            left: -15px;
-            color: $link_font_color;
+            left: -30px;
+            color: #f58220;
         }
+    }
+
+    ul {
+        li {
+            list-style: circle;
+        }
+    }
+
+    #more {
+        display: block;
+        margin: {
+            top: 10px;
+            bottom: 10px;
+        }
+        border-bottom: 2px dashed $border_default_color;
     }
 
 }
