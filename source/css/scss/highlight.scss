@@ -49,7 +49,7 @@ $signs: ("html", "js", "bash", "css", "scss","diff", "java", "xml", "python",
 
 code {
     padding: 3px;
-    color: $code_color;
+    color: $inline_code_color;
     background: #eee;
     border-radius: 2px;
     white-space: inherit;

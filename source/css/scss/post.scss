@@ -1,28 +1,25 @@
 .post {
     .post-items {
-        padding: {
-            top: 20px;
-            bottom: 20px;
-        }
+        padding: 20px 0;
         border-bottom: 1px solid $border_default_color;
+        .readmore a {
+            color: $color_blue;
+        }
     }
     h1, .post-title {
         font-size: 1.4em;
         font-weight: bold;
         a {
-            color: $post_title_color;
+            color: $global_font_color;
             &:hover {
-                border-bottom: 2px solid $link_font_color;
+                border-bottom: 2px solid $a_font_color;
             }
         }
     }
     .post-meta {
         color: $post_meta_color;
         font-size: 0.9em;
-        padding: {
-            top: 15px;
-            bottom: 15px;
-        }
+        padding: 15px 0;
         .post-tags {
             a {
                 margin-left: 10px;
@@ -42,23 +39,18 @@
 
     h2 {
         font-size: 1.4em;
-        margin: 1.3em 0;
-        position: relative;
-        &:before{
-            content: "#";
-            position: absolute;
-            left: -20px;
-            color: $link_font_color;
-        }
+        margin: 1.2em 0;
+        padding-bottom: 5px;
+        border-bottom: 1px solid $border_default_color;
     }
 
     h3 {
         position: relative;
         &:before{
-            content: "##";
+            content: "#";
             position: absolute;
-            left: -30px;
-            color: #f58220;
+            left: -20px;
+            color: $color_green;
         }
     }
 
@@ -68,13 +60,11 @@
         }
     }
 
-    #more {
+    hr {
         display: block;
-        margin: {
-            top: 10px;
-            bottom: 10px;
-        }
-        border-bottom: 2px dashed $border_default_color;
+        margin: 10px 0;
+        border-top: 2px dashed $border_default_color;
+        border-bottom: none;
     }
 
 }
@@ -157,7 +147,7 @@
             a {
                 color: $global_font_color;
                 &:hover {
-                    color: $link_font_color;
+                    color: $a_font_color;
                 }
             }
         }
@@ -170,7 +160,7 @@
 blockquote {
     margin-left: 0;
     padding-left: 20px;
-    border-left: 4px solid $link_font_color;
+    border-left: 4px solid $a_font_color;
 }
 
 img {
