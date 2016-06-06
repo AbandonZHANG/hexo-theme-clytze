@@ -5,6 +5,12 @@
         .readmore a {
             color: $color_blue;
         }
+        &:first-child {
+            padding-top: 0;
+        }
+        &:last-child {
+            border-bottom: 0;
+        }
     }
     h1, .post-title {
         font-size: 1.4em;
@@ -12,7 +18,7 @@
         a {
             color: $global_font_color;
             &:hover {
-                border-bottom: 2px solid $a_font_color;
+                border-bottom: 2px solid $post_a_font_color;
             }
         }
     }
@@ -30,11 +36,9 @@
             }
         }
     }
-    :first-child {
-        padding-top: 0;
-    }
-    :last-child {
-        border-bottom: 0;
+
+    a {
+        color: $post_a_font_color;
     }
 
     h2 {
@@ -51,6 +55,21 @@
             position: absolute;
             left: -20px;
             color: $color_green;
+        }
+    }
+
+    h4 {
+        position: relative;
+        &:before{
+            content: '';
+            position: absolute;
+            left: -16px;
+            top: 8px;
+            background: $color_green;
+            border: 1px solid $color_green;
+            height: 3px;
+            width: 3px;
+            border-radius: 100%;
         }
     }
 
