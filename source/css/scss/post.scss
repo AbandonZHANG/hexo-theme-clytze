@@ -1,55 +1,45 @@
-.post {
-    .post-items {
-        padding: 20px 0;
-        border-bottom: 1px solid $border_default_color;
-        .readmore a {
-            color: $color_blue;
-        }
-        &:first-child {
-            padding-top: 0;
-        }
-        &:last-child {
-            border-bottom: 0;
+.post-title {
+    font-size: 1.4em;
+    font-weight: normal;
+    color: $color_black;
+    a {
+        color: inherit;
+        &:hover {
+            border-bottom: 2px solid $post_a_font_color;
         }
     }
-    h1, .post-title {
-        font-size: 1.4em;
-        font-weight: bold;
-        a {
-            color: $global_font_color;
-            &:hover {
-                border-bottom: 2px solid $post_a_font_color;
-            }
-        }
-    }
-    .post-meta {
-        color: $post_meta_color;
-        font-size: 0.9em;
-        padding: 15px 0;
-        .post-tags {
-            a {
-                margin-left: 10px;
-                padding: 3px 6px;
-                border-radius: 5px;
-                background: $post_tag_backgroud;
-                color: #fff;
-            }
-        }
-    }
+}
 
+.post-meta {
+    padding-top: 15px;
+    .post-tags {
+        span {
+            margin-left: 10px;
+            color: inherit;
+            &:before {
+                content: '·';
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.post-content {
     a {
         color: $post_a_font_color;
     }
 
     h2 {
+        color: $color_black;
         font-size: 1.4em;
+        font-weight: normal;
         margin: 1.2em 0;
-        padding-bottom: 5px;
-        border-bottom: 1px solid $border_default_color;
     }
 
     h3 {
+        color: $color_black;
         position: relative;
+        font-weight: normal;
         &:before{
             content: "#";
             position: absolute;
@@ -64,7 +54,7 @@
             content: '';
             position: absolute;
             left: -16px;
-            top: 8px;
+            top: 10px;
             background: $color_green;
             border: 1px solid $color_green;
             height: 3px;
@@ -85,7 +75,38 @@
         border-top: 2px dashed $border_default_color;
         border-bottom: none;
     }
+}
 
+.index {
+    .post-items {
+        padding: 20px 0;
+        border-bottom: 1px solid $border_default_color;
+        .readmore a {
+            color: $color_blue;
+        }
+        &:first-child {
+            padding-top: 0;
+        }
+        &:last-child {
+            border-bottom: 0;
+        }
+        .post-meta{
+            color: $post_meta_color;
+        }
+        
+    }
+}
+
+.post {
+    .post-title {
+        text-align: center;
+    }
+    .post-meta {
+        text-align: center;
+    }
+    .post-content {
+        margin-top: 80px;
+    }
 }
 
 .page-nav {

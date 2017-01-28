@@ -11,12 +11,7 @@ block content
       if page.tags
         span.post-tags
           for tag in page.tags.toArray()
-            a(href=url_for(tag.path))
-              != tag.name
-    //if page.toc
-    //  .post-toc
-    //    .toc-title= __('contents')
-    //    != toc(page.content)
+            span= tag.name
     .post-content
       != page.content
 
